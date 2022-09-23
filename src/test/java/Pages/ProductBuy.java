@@ -9,8 +9,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class ProductBuy
-{
+public class ProductBuy {
     WebDriver driver;
 
     By loginButton = By.xpath("//input[@id='login-button']");
@@ -33,6 +32,7 @@ public class ProductBuy
     public ProductBuy(WebDriver driver) {
         this.driver = driver;
     }
+
     public void LoginButton() {
         driver.findElement(loginButton).click();
     }
